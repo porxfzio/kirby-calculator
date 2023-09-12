@@ -25,14 +25,14 @@ function clearDisplay() {
 function calculate() {
     try {
         result = eval(currentInput);
-        document.getElementById("screen").value = result; // Change "display" to "screen" here
+        document.getElementById("screen").value = result;
         currentInput = result;
     } catch (error) {
         document.getElementById("screen").value = "ano teh?";
     }
 }
 
-let isClearMode = false; // Initially, it's not in clear mode
+let isClearMode = false;
 
 function toggleEqualClear() {
     if (isClearMode) {
@@ -40,5 +40,5 @@ function toggleEqualClear() {
     } else {
         calculate();
     }
-    isClearMode = !isClearMode; // Toggle the mode
+    isClearMode = !isClearMode;
 }
